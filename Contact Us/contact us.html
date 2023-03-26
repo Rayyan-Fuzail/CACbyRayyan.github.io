@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-----Google Fonts----->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <!-------AOS-------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        function Validata() {
+            var vname = /[A-Za-z]/;
+            var vemail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (!name.match(vname)) {
+                alert("Enter Valid Name");
+            }
+            if (!email.match(vemail)) {
+                alert("Enter Valid Email");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!----------------------------------------------------------------Nav--------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="../Home/home.html"><img src="Logo.png"
+                style="height: 55px; filter: invert(100%);"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link myclassforhover" href="../Home/home.html"
+                        style="color: white; margin: 0px 17px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link myclassforhover" href="../About/about.html"
+                        style="color: white; margin: 0px 17px;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link myclassforhover" href="contact us.html"
+                        style="color: black; margin: 0px 17px; font-weight: 800; font-size: 17px; text-decoration: underline;">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="color: white; margin: 0px 17px;">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../Products/Products1/products1 (1).html">Ductless Mini-Split</a>
+                        <a class="dropdown-item" href="../Products/Products2/products2 (1).html">Smart AC</a>
+                        <a class="dropdown-item" href="../Products/Products3/products3 (1).html">Hybrid AC</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0 myclassbtn" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-----------------------------------------------------------------Body------------------------------------------------------------------------->
+
+    <section class="sectiontag">
+        <div class="contacth">
+            <h2>Contact Us</h2>
+            <p>You can give us some feedback, any suggestions on how can we make your experience better or complain
+                about any
+                inconvenience you faced so that we will fix it.</p>
+        </div>
+        <div class="mycontainer">
+            <div class="contactinfo">
+                <div class="infoblock">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Adress</h3>
+                        <p>Aptech Metro Stargate<br>Shah Faisal<br>Karachi</p>
+                    </div>
+                </div>
+                <div class="infoblock">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0334-1234567</p>
+                    </div>
+                </div>
+                <div class="infoblock">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <address>
+                            <p> <a href="mailto:cosyairconditioners@gmail.com">cosyairconditioners@gmail.com</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="submit.html">
+                    <h2>Send Your Message !</h2>
+                    <div class="inputdiv">
+                        <input id="name" type="text" placeholder="Enter Your Name"><br>
+                        <input id="email" type="email" placeholder="Enter Your Email"><br>
+                        <textarea placeholder="Enter Your Message" required="Enter You Message"></textarea><br>
+                        <div class="sendbtn"><input type="submit" value="Send" onclick="Validata()"
+                                onsubmit="location.href'submit.html"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------Footer--------------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="footercontent">
+
+
+            <div class="footer1">
+                <div>
+                    <a href="../Home/home.html"><img src="Logo.png" height="100vw;" width="300vw"
+                            style="margin: 30px 20px; filter: invert(100%);"></a>
+                </div>
+                <div style="margin-bottom: 30px; font-size: 1.3em;" class="socials">
+                    <a id="facebook" href="https://facebook.com" class="fa fa-facebook-square fa-2x" target="blank"></a>
+                    <a id="twitter" href="https://twitter.com/home" class="fa fa-twitter fa-2x" target="blank"></a>
+                    <a id="instagram" href="https://www.instagram.com/" class="fa fa-instagram fa-2x"
+                        target="blank"></a>
+                    <a id="youtube" href="https://youtube.com" class="fa fa-youtube fa-2x" target="blank"></a>
+                </div>
+            </div>
+
+
+            <div class="footer2">
+                <a href="../About/about.html" class="about">About Us</a>
+                <a href="../Privacy Policy/privacypolicy.html" class="about">Privacy Policy</a>
+                <a href="../Terms/terms.html" class="about">Terms</a>
+                <a href="#" class="about">Conditions</a>
+            </div>
+
+
+            <div class="footer3">
+                <h1>Newsletter!!</h1>
+                <p>Get the most of Cosy AirConditioners by signing up. Stay updated about the best deals available.</p>
+                <form>
+                    <input id="emailbar" type="email" placeholder="Enter Your Email..."
+                        required="Please fill in this field"><br>
+                    <input id="submitbtn" type="button" onclick="sweetalert()"  value="Sign Up">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footerbottom">
+            <p>&copy; Cosy AirConditioners 2021| Designed by Rayyan and Arsalan</p>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------------------------Scripts------------------------------------------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!------About1-------->
+    <script>
+        document.getElementById("about1btn").onclick = function () {
+            location.href = "../Home/home.html"
+        };
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function sweetalert() {
+            swal({
+                title: "Thank You !",
+                text: "You'll get notifications!",
+                icon: "success",
+                button: "OK",
+            });
+        };
+    </script>
+
+    <!-------AOS-------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>
